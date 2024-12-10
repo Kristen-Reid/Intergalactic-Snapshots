@@ -2,15 +2,15 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    /* background-color: hotpink; */
+}
+
+main {
+    height: 100vh;
 }
 
 nav {
     display: flex;
     justify-content: space-around;
-    margin: 10px 20px;
-    /* padding: 10px 50px; */
-    /* background-color: orange; */
 }
 
 nav a {
@@ -18,7 +18,6 @@ nav a {
     padding: 5px;
     color: #333;
     text-decoration: none;
-    /* background-color: purple; */
 }
 
 .navbar {
@@ -27,11 +26,30 @@ flex-direction: row;
 justify-content: space-around;
 align-items: center;
 border-bottom: 5px #333 solid;
-/* background-color: blue; */
 }
 
 .navbar p {
     color: #333;
     font-size: 30px;
     margin: 20px;
+}
+
+.landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 1200px;
+    height: 800px;
+}
+
+.background-image {
+    width: 100vh;
+}
+
+h1 {
+    margin: 0;
 }

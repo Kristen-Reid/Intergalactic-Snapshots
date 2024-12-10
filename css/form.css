@@ -19,6 +19,9 @@ fieldset {
 
 h2 {
     text-align: center;
+    font-size: 40px;
+    margin: 10px;
+    padding: 10px;
 }
 
 .information {
@@ -27,7 +30,6 @@ h2 {
     justify-content: center;
     align-items: center;
     height: 350px;
-    background-color: blue;
 }
 
 .information input {
@@ -36,9 +38,10 @@ h2 {
     padding: 15px;
     margin: 10px;
     cursor: pointer;
+    border: 2px #333 solid;
 }
 
-label for .lastName {
+label {
     cursor: pointer;
 }
 
@@ -53,6 +56,7 @@ button {
     width: 90px;
     height: 40px;
     background-color: transparent;
+    margin: 0 0 70px;
 }
 
 .submit-btn {
