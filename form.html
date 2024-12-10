@@ -1,22 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        <section class="navbar">
-            <p>Sample Logo</p>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="form.html">Sign Up</a>
-                <a href="links.html">Resources</a>
-                <a href="images.html">Photos</a>
-            </nav>
-        </section>
-    </header>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="/css/form.css">
+    </head>
+    <body>
+        <header>
+            <section class="navbar">
+                <p>Sample Logo</p>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="form.html">Sign Up</a>
+                    <a href="links.html">Resources</a>
+                    <a href="images.html">Photos</a>
+                </nav>
+            </section>
+        </header>
+        <main>
+            <form action="" method="post" class="signup-form">
+                <fieldset>
+                    <!-- <legend>Sign Up!</legend> -->
+                    <h2>Sign Up</h2>
+                    <div class="information">
+                        <div class="info-box">
+                            <label for="firstName">First Name</label>
+                            <input
+                                type="text"
+                                class="firstName"
+                                id="firstName"
+                                name="first-name"
+                            >
+                        </div>
+                        <div class="info-box">
+                            <label for="lasttName">Last Name</label>
+                            <input
+                                type="text"
+                                class="lastName"
+                                id="lastName"
+                                name="last-name"
+                            >
+                        </div>
+                        <div class="info-box">
+                            <label for="email">Email Address</label>
+                            <input
+                                type="email"
+                                class="email"
+                                id="email"
+                                name="email-address"
+                            >
+                        </div>
+                    </div>
+                    <div class="submit-btn">
+                        <button type="submit">Submit</button>
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+    </body>
 </html>
