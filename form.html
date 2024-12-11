@@ -10,54 +10,67 @@
     <body>
         <header>
             <section class="navbar">
-                <p>Sample Logo</p>
+                <div>
+                    <p>Sample Logo</p>
+                </div>
                 <nav>
                     <a href="index.html">Home</a>
-                    <a href="form.html">Sign Up</a>
-                    <a href="links.html">Resources</a>
-                    <a href="images.html">Photos</a>
+                    <a href="resources.html">Resources</a>
+                    <a href="photos.html">Photos</a>
                 </nav>
+                <div>
+                    <button>
+                        <a href="form.html">Login</a>
+                    </button>
+                    <button>
+                        <a href="form.html">Sign Up</a>
+                    </button>
+                </div>
             </section>
         </header>
         <main>
-            <form action="" method="post" class="signup-form">
-                <fieldset>
-                    <!-- <legend>Sign Up!</legend> -->
-                    <h2>Sign Up</h2>
-                    <div class="information">
-                        <div class="info-box">
-                            <label for="firstName">First Name</label>
-                            <input
-                                type="text"
-                                class="firstName"
-                                id="firstName"
-                                name="first-name"
-                            >
-                        </div>
-                        <div class="info-box">
-                            <label for="lastName">Last Name</label>
-                            <input
-                                type="text"
-                                class="lastName"
-                                id="lastName"
-                                name="last-name"
-                            >
-                        </div>
-                        <div class="info-box">
-                            <label for="email">Email Address</label>
-                            <input
-                                type="email"
-                                class="email"
-                                id="email"
-                                name="email-address"
-                            >
-                        </div>
-                    </div>
-                    <div class="submit-btn">
-                        <button type="submit">Submit</button>
-                    </div>
-                </fieldset>
-            </form>
+            <div class="container">
+                <div class="left"></div>
+                <div class="right">
+                    <form action="" method="post" class="signup-form">
+                        <fieldset>
+                            <!-- <h2>Sign Up</h2> -->
+                            <div class="information">
+                                <div class="info-box first-name">
+                                    <label for="firstName">First Name</label>
+                                    <input
+                                        type="text"
+                                        class="firstName"
+                                        id="firstName"
+                                        name="first-name"
+                                    >
+                                </div>
+                                <div class="info-box">
+                                    <label for="lastName">Last Name</label>
+                                    <input
+                                        type="text"
+                                        class="lastName"
+                                        id="lastName"
+                                        name="last-name"
+                                    >
+                                </div>
+                                <div class="info-box">
+                                    <label for="email">Email Address</label>
+                                    <input
+                                        type="email"
+                                        class="email"
+                                        id="email"
+                                        name="email-address"
+                                    >
+                                </div>
+                                <div class="submit-btn info-box">
+                                    <button type="submit">Submit</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
         </main>
     </body>
 </html>
