@@ -4,9 +4,18 @@ body {
 }
 
 main {
+    margin-top: -100px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.container {
+    /* background-color: blue; */
+    display: flex;
+    /* width: 50%; */
+    /* border: #333 2px solid; */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
 }
 
 fieldset {
@@ -16,9 +25,6 @@ fieldset {
     border-width: 2px 2px 2px 0;
 }
 
-/* form {
-
-} */
 
 .right {
     /* flex: 1; */
@@ -82,13 +88,21 @@ form button {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 70px;
     width: 100%;
    }
 
    fieldset {
         border-width: 2px;
    }
+
+   .container {
+    /* background-color: blue; */
+    display: flex;
+    width: 227px;
+    /* border: #333 2px solid; */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+}
 
    .right {
     display: flex;
