@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    /* overflow: hidden; */
     box-sizing: border-box;
 }
 
@@ -25,12 +26,13 @@ nav a {
     text-decoration: none;
 }
 
+
 .navbar {
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-border-bottom: 5px #333 solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px #333 solid;
 }
 
 .navbar p {
@@ -39,11 +41,18 @@ border-bottom: 5px #333 solid;
     margin: 20px;
 }
 
+.navbar button {
+    margin-top: 15px;
+    width: 90px;
+    height: 40px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
 .landing {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     justify-content: center;
-    align-items: center;
+    align-content: center;
 }
 
 h1 {

@@ -5,17 +5,8 @@ body {
 
 main {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100%;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: repeat(2, 600px);
-    justify-content: center;
-    align-content: center;
 }
 
 fieldset {
@@ -25,13 +16,24 @@ fieldset {
     border-width: 2px 2px 2px 0;
 }
 
+/* form {
 
-.left {
-    background: url(/images/il_1080xN.3484268130_jiph.avif) no-repeat;
-    background-size: cover;
+} */
+
+.right {
+    /* flex: 1; */
+    width: 400px;
+    height: 400px;
 }
 
 
+.left {
+    /* flex: 1; */
+    width: 400px;
+    height: 400px;
+    background: url(/images/il_1080xN.3484268130_jiph.avif) no-repeat;
+    background-size: cover;
+}
 
 /* h2 {
     text-align: center;
@@ -40,48 +42,61 @@ fieldset {
     padding: 10px;
 } */
 
-label {
-    cursor: pointer;
-}
-
 .information {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: blue; */
-    margin: 0;
-    padding: 0;
 }
 
 .information input {
+    display: flex;
+    flex-direction: column;
     padding: 15px;
     margin: 10px;
     cursor: pointer;
     border: 2px #333 solid;
 }
 
-.info-box {
-    /* background-color: red; */
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
+label {
     cursor: pointer;
 }
 
-.info-box.first-name {
-    margin-top: 15px;
+.info-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
 }
 
 form button {
-    margin-top: 15px;
     width: 90px;
     height: 40px;
     background-color: transparent;
+    margin: 0 0 70px;
 }
 
-.submit-btn {
+@media (max-width: 600px) {
+   main {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
     width: 100%;
+   }
+
+   fieldset {
+        border-width: 2px;
+   }
+
+   .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+  .left {
+    display: none;
+  }
 }
