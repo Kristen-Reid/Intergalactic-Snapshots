@@ -6,6 +6,7 @@
     overflow: hidden;
     box-sizing: border-box;
     cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -20,7 +21,14 @@ main {
 nav {
     height: 80px;
     width: 100%;
-    background-color: aqua;
+    background-color: blueviolet;
+}
+
+.logo {
+    color: #333;
+    font-size: 35px;
+    line-height: 80px;
+    margin: 0 100px;
 }
 
 nav ul {
@@ -29,37 +37,29 @@ nav ul {
 }
 
 nav ul li {
-    color: #333;
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
 }
 
-nav button {
-    float: right;
-    margin: 30px 5px;
+.nav-links {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
 }
 
-nav button a {
-    /* margin-right: 20px; */
-    /* line-height: 80px; */
-    /* width: 90px;
-    height: 40px;
-    background-color: transparent;
-    cursor: pointer; */
-}
-
-.logo {
-    color: #333;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
+a.active, nav ul li a:hover {
+    background-color: #333;
+    transition: .5s;
 }
 
 .check-btn {
     font-size: 30px;
     float: right;
-    /* margin: 40px; */
+    margin-right: 40px;
+    line-height: 80px;
     display: none;
     cursor: pointer;
 }
@@ -68,20 +68,52 @@ nav button a {
     display: none;
 }
 
-@media (max-width: 630px) {
-    /* .navbar button {
-        display: none;
-    } */
+@media (max-width: 960px) {
+    .nav-links {
+        font-size: 14px;
+    }
+
+    .logo {
+        font-size: 30px;
+        margin: 0 50px 0 100px;
+}
+
+}
+
+@media (max-width: 864px) {
 
     .check-btn {
         display: block;
     }
 
-    .navbar a {
+    ul {
         position: fixed;
         width: 100%;
         height: 100vh;
+        /* display: block; */
+        top: 80px;
+        left: -100%;
+        transition: all .5s;
+        text-align: center;
+        background-color: #333;
+    }
+
+    nav ul li {
         display: block;
+    }
+
+    .nav-links {
+        font-size: 17px;
+        color: white;
+    }
+
+    a.active, nav ul li a:hover {
+        background: none;
+        color: blueviolet;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
     }
 }
 
