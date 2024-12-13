@@ -4,14 +4,14 @@ body {
 }
 
 main {
-    margin-top: -100px;
+    margin-top: 200px;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .container {
     display: flex;
+    height: 400px;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
 }
 
@@ -82,66 +82,56 @@ form button {
 
 @media (max-width: 800px) {
     .container {
-    display: flex;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
-}
+        display: flex;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+    }
     .right {
-    width: 300px;
-    height: 400px;
-}
+        width: 300px;
+        height: 400px;
+    }
 
 
     .left {
-    width: 300px;
-    height: 400px;
-    background: url(/images/il_1080xN.3484268130_jiph.avif) no-repeat;
-    background-size: cover;
-}
+        width: 300px;
+        height: 400px;
+        background: url(/images/il_1080xN.3484268130_jiph.avif) no-repeat;
+        background-size: cover;
+    }
 }
 
 @media (max-width: 600px) {
-   main {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 70px;
-    width: 100%;
-   }
 
-
-   fieldset {
+    fieldset {
         border-width: 2px;
         width: 300px;
-   }
+    }
 
    .container {
-    display: flex;
-    width: 300px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
-}
+        display: flex;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+    }
 
    .right {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
   .left {
-    display: none;
-  }
+        display: none;
+    }
 
   .information input {
-    width: 170px;
-  }
+        width: 170px;
+    }
 
   form button {
-    width: 70px;
-    height: 30px;
-    background-color: transparent;
-    margin: 20px 0;
-    border-radius: 12px;
-}
+        width: 70px;
+        height: 30px;
+        background-color: transparent;
+        margin: 20px 0;
+        border-radius: 12px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -151,8 +141,8 @@ form button {
    }
 
    .container {
-    display: flex;
-    width: 227px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
-}
+        display: flex;
+        width: 227px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+    }
 }

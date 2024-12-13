@@ -1,8 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    list-style: none;
     overflow: hidden;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 body {
@@ -15,38 +18,71 @@ main {
 }
 
 nav {
-    display: flex;
-    justify-content: space-around;
+    height: 80px;
+    width: 100%;
+    background-color: aqua;
 }
 
-nav a {
-    margin: 10px;
-    padding: 5px;
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
     color: #333;
-    text-decoration: none;
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
 }
 
-
-.navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 5px #333 solid;
+nav button {
+    float: right;
+    margin: 30px 5px;
 }
 
-.navbar p {
-    color: #333;
-    font-size: 30px;
-    margin: 20px;
-}
-
-.navbar button {
-    margin-top: 15px;
-    width: 90px;
+nav button a {
+    /* margin-right: 20px; */
+    /* line-height: 80px; */
+    /* width: 90px;
     height: 40px;
     background-color: transparent;
+    cursor: pointer; */
+}
+
+.logo {
+    color: #333;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+}
+
+.check-btn {
+    font-size: 30px;
+    float: right;
+    /* margin: 40px; */
+    display: none;
     cursor: pointer;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 630px) {
+    /* .navbar button {
+        display: none;
+    } */
+
+    .check-btn {
+        display: block;
+    }
+
+    .navbar a {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        display: block;
+    }
 }
 
 .landing {
