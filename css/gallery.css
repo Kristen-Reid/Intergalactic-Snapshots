@@ -1,6 +1,5 @@
 body {
-    width: 100%;
-    /* overflow: scroll; */
+    overflow: hidden;
     background-color: #333;
 }
 
@@ -13,30 +12,41 @@ main {
 .grid-container {
     align-items: center;
     justify-items: center;
-    /* background-color: blue; */
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-template-rows: 100vvh;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 15px;
-    width: 50%;
+    width: 75%;
     margin-top: -100px;
 }
 
-img {
+.photo-card {
     border-radius: 10px;
-    border: 5px solid white;
+    border: 5px solid black;
     height: 250px;
-    width: 250px;
+    width: 350px;
+    margin-top: 50px;
+    text-align: center;
 }
 
-@media (max-width: 1579px) {
+img {
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 1446px) {
+    body {
+        overflow: scroll;
+    }
+
     .grid-container {
-        margin-top: 40px;
+        margin-top: 30px;
     }
 }
 
-@media (max-width: 1047px) {
+@media (max-width: 1446px) {
+
     .grid-container {
-        margin-top: 90px;
+        margin-top: 150px;
     }
 }
