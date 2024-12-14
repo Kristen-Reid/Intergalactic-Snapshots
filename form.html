@@ -36,39 +36,48 @@
                 </ul>
             </nav>
         </header>
-        <main>
-            <div class="container">
+        <main class="form-container">
                 <div class="left"></div>
                 <div class="right">
                     <form action="" method="post" class="signup-form">
                         <fieldset>
-                            <!-- <h2>Sign Up</h2> -->
+                            <h2>Sign Up</h2>
+                            <p>Have an account? <a href="/form.html">Log in</a></p>
                             <div class="information">
                                 <div class="info-box first-name">
-                                    <label for="firstName">First Name</label>
                                     <input
                                         type="text"
                                         class="firstName"
                                         id="firstName"
                                         name="first-name"
+                                        placeholder="First Name..."
                                     >
                                 </div>
                                 <div class="info-box">
-                                    <label for="lastName">Last Name</label>
                                     <input
                                         type="text"
                                         class="lastName"
                                         id="lastName"
                                         name="last-name"
+                                        placeholder="Last Name..."
                                     >
                                 </div>
                                 <div class="info-box">
-                                    <label for="email">Email Address</label>
                                     <input
                                         type="email"
                                         class="email"
                                         id="email"
                                         name="email-address"
+                                        placeholder="Email Address..."
+                                    >
+                                </div>
+                                <div class="info-box">
+                                    <input
+                                        type="password"
+                                        class="password"
+                                        id="password"
+                                        name="password"
+                                        placeholder="Password..."
                                     >
                                 </div>
                                 <div class="submit-btn info-box">
@@ -78,7 +87,6 @@
                         </fieldset>
                     </form>
                 </div>
-            </div>
         </main>
     </body>
 </html>

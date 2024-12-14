@@ -4,49 +4,49 @@ body {
     overflow: hidden;
 }
 
-nav {
-    position: static;
-}
-
-main {
-    margin-top: 200px;
+.form-container {
+    height: 100vh;
+    width: 100%;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: center; */
     display: flex;
-    justify-content: center;
-}
-
-.container {
-    display: flex;
-    height: 400px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+    justify-content: space-evenly;
 }
 
 fieldset {
-    height: 400px;
-    border-style: solid;
-    border-color: #333;
-    border-width: 2px 2px 2px 0;
+    height: 500px;
+    border: 2px solid #333;
+    border-radius: 15px;
 }
 
 
 .right {
+    float: right;
     width: 400px;
     height: 400px;
+    margin-top: 50px;
 }
 
 
 .left {
+    margin-top: 100px;
+    float: left;
     width: 400px;
     height: 400px;
-    background: url(/images/il_1080xN.3484268130_jiph.avif) no-repeat;
+    background: url(/images/pngtree-landing-page-with-cartoon-space-planets-rocket-png-image_12998122-removebg-preview.png) no-repeat;
     background-size: cover;
 }
 
-/* h2 {
-    text-align: center;
-    font-size: 40px;
+h2 {
+    font-size: 30px;
     margin: 10px;
-    padding: 10px;
-} */
+}
+
+p {
+    text-align: right;
+    margin-right: 10px;
+}
 
 .information {
     display: flex;
@@ -60,14 +60,14 @@ fieldset {
     display: flex;
     flex-direction: column;
     padding: 10px;
-    margin: 10px;
+    margin: 5px;
     border-radius: 10px;
     cursor: pointer;
     border: 2px #333 solid;
 }
 
-label {
-    cursor: pointer;
+.information input::placeholder {
+    color: black;
 }
 
 .info-box {
@@ -81,11 +81,11 @@ form button {
     width: 90px;
     height: 40px;
     background-color: transparent;
-    margin: 20px 0;
+    margin: 10px 0 0;
     border-radius: 12px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 798px) {
     .container {
         display: flex;
         box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
@@ -98,8 +98,7 @@ form button {
 
     .left {
         width: 300px;
-        height: 400px;
-        background: url(/images/il_1080xN.3484268130_jiph.avif) no-repeat;
+        height: 300px;
         background-size: cover;
     }
 }
@@ -150,4 +149,6 @@ form button {
         width: 227px;
         box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
     }
+
+
 }
