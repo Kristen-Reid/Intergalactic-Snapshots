@@ -7,17 +7,17 @@ body {
 .form-container {
     height: 100vh;
     width: 100%;
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    justify-items: center; */
     display: flex;
     justify-content: space-evenly;
 }
 
+
 fieldset {
+    background-color: rgba(0, 0, 0, 0.5);
     height: 500px;
-    border: 2px solid #333;
+    border-color: transparent;
     border-radius: 15px;
+    color: white;
 }
 
 
@@ -34,7 +34,7 @@ fieldset {
     float: left;
     width: 400px;
     height: 400px;
-    background: url(/images/pngtree-landing-page-with-cartoon-space-planets-rocket-png-image_12998122-removebg-preview.png) no-repeat;
+    background: url(/images/pngtree-astronaut-using-telescope-in-outer-space-for-star-gazing-and-exploration-png-image_13146210-removebg-preview.png) no-repeat;
     background-size: cover;
 }
 
@@ -63,7 +63,7 @@ p {
     margin: 5px;
     border-radius: 10px;
     cursor: pointer;
-    border: 2px #333 solid;
+    border-color: transparent;
 }
 
 .information input::placeholder {
@@ -80,16 +80,14 @@ p {
 form button {
     width: 90px;
     height: 40px;
-    background-color: transparent;
+    background-color: blueviolet;
     margin: 10px 0 0;
     border-radius: 12px;
+    color: white;
+    border-color: transparent;
 }
 
 @media (max-width: 798px) {
-    .container {
-        display: flex;
-        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
-    }
     .right {
         width: 300px;
         height: 400px;
@@ -110,11 +108,6 @@ form button {
         width: 300px;
     }
 
-   .container {
-        display: flex;
-        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
-    }
-
    .right {
         display: flex;
         align-items: center;
@@ -132,7 +125,7 @@ form button {
   form button {
         width: 70px;
         height: 30px;
-        background-color: transparent;
+        /* background-color: bl; */
         margin: 20px 0;
         border-radius: 12px;
     }
@@ -143,12 +136,6 @@ form button {
         border-width: 2px;
         width: 227px;
    }
-
-   .container {
-        display: flex;
-        width: 227px;
-        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
-    }
 
 
 }
