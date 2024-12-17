@@ -9,6 +9,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+    padding: 100px;
 }
 
 
@@ -25,12 +26,13 @@ fieldset {
     float: right;
     width: 400px;
     height: 500px;
-    margin: 50px 100px;
 }
 
 
 .left {
+    background-color: blue;
     margin-top: 100px;
+    margin-right: 50px;
     float: left;
     width: 400px;
     height: 400px;
@@ -78,13 +80,31 @@ p {
 }
 
 form button {
-    width: 90px;
+    width: 110px;
     height: 40px;
-    background-color: blueviolet;
-    margin: 10px 0 0;
+    background-color: rgb(69, 2, 137);
+    margin-top: 20px;
     border-radius: 12px;
     color: white;
     border-color: transparent;
+}
+
+@media (max-width: 956px) {
+    .right {
+        padding: 0;
+    }
+
+    .left {
+        width: 300px;
+        height: 300px;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 895px) {
+    .left {
+        margin-right: 0;
+    }
 }
 
 @media (max-width: 798px) {
@@ -99,9 +119,17 @@ form button {
         height: 300px;
         background-size: cover;
     }
+
+    .information input {
+        width: 170px;
+    }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 735px) {
+
+    .form-container {
+        margin-top: 60px;
+    }
 
     fieldset {
         border-width: 2px;
@@ -118,20 +146,13 @@ form button {
         display: none;
     }
 
-  .information input {
-        width: 170px;
-    }
-
   form button {
-        width: 70px;
-        height: 30px;
+        width: 100px;
+        height: 40px;
         margin: 20px 0;
         border-radius: 12px;
     }
 
-    .right {
-    margin-top: 100px;
-   }
 }
 
 @media (max-width: 400px) {
@@ -139,8 +160,5 @@ form button {
         width: 227px;
    }
 
-   .right {
-    margin-top: 100px;
-   }
 
 }
