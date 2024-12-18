@@ -1,11 +1,10 @@
 body {
-    /* overflow: hidden; */
     height: 100vh;
     width: 100%;
-    background-color: pink;
 }
 
 main {
+    position: relative;
     height: 100%;
     padding-top: 100px;
 }
@@ -24,10 +23,6 @@ h1 {
     width: 500px;
     height: 500px;
     /* background-color: blue; */
-}
-
-.image-container {
-    /* position: fixed; */
 }
 
 .left {

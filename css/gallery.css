@@ -1,20 +1,26 @@
 body {
     overflow: hidden;
+    height: 250vh;
+}
+
+h1 {
+    padding: 100px 0 50px;
 }
 
 .gallery-container {
-    align-content: center;
     justify-items: center;
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
 .grid-container {
+    padding-bottom: 60px;
     justify-items: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 15px;
     width: 75%;
+    background-color: purple;
 }
 
 .photo-card {
@@ -36,8 +42,12 @@ img {
     body {
         overflow: scroll;
     }
+}
 
-    .grid-container {
-        padding-top: 100px;
-    }
+@media (max-width: 1418px) {
+
+    /* .photo-card {
+        height: 150px;
+        width: 250px;
+    } */
 }
