@@ -1,4 +1,5 @@
 body {
+    /* overflow: hidden; */
     height: 100vh;
     width: 100%;
     background-color: pink;
@@ -6,10 +7,11 @@ body {
 
 main {
     height: 100%;
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
 h1 {
+    padding-top: 50px;
 }
 
 .container {
@@ -24,16 +26,22 @@ h1 {
     /* background-color: blue; */
 }
 
+.image-container {
+    /* position: fixed; */
+}
+
 .left {
-    position: fixed;
+    position: absolute;
     height: 500px;
     left: 900px;
-    /* border-radius: 200px; */
+    top: 250px;
+    border-radius: 200px;
 }
 
 .right {
     z-index: 1;
-    position: fixed;
+    position: absolute;
     height: 500px;
+    top: 250px;
     left: 1120px;
 }
