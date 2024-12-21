@@ -1,10 +1,14 @@
 body {
-    overflow: hidden;
-    height: 250vh;
+    height: 100vh;
+    overflow-x: hidden;
 }
 
 h1 {
-    padding: 100px 0 50px;
+    padding-top: 100px;
+}
+
+p {
+    padding-top: 10px;
 }
 
 .gallery-container {
@@ -20,7 +24,6 @@ h1 {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 15px;
     width: 75%;
-    background-color: purple;
 }
 
 .photo-card {
@@ -38,16 +41,24 @@ img {
     height: 100%;
 }
 
-@media (max-width: 1446px) {
+@media (max-width: 1456px) {
     body {
-        overflow: scroll;
+        height: 130vh;
     }
 }
 
-@media (max-width: 1418px) {
 
-    /* .photo-card {
+@media (max-width: 970px) {
+    body {
+        height: 230vh;
+    }
+}
+
+@media (max-width: 590px) {
+
+    .photo-card {
         height: 150px;
         width: 250px;
-    } */
+    }
+
 }
