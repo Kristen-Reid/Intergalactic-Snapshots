@@ -1,28 +1,33 @@
 body {
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     overflow-x: hidden;
 }
 
-h1 {
-    padding-top: 100px;
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.gallery-headline {
+    padding: 100px 0 0;
 }
 
 p {
     padding-top: 10px;
 }
 
-.gallery-container {
-    justify-items: center;
-    height: 100%;
-    width: 100%;
-}
-
 .grid-container {
-    padding-bottom: 60px;
+    flex-grow: 1;
+    padding:  20px 0 100px 0;
     justify-items: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 15px;
+    gap: 10px;
     width: 75%;
 }
 
@@ -45,6 +50,11 @@ img {
     body {
         height: 130vh;
     }
+
+    /* h1 {
+     padding: 350px 0 0;
+
+    } */
 }
 
 
