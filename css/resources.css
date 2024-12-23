@@ -16,7 +16,7 @@ body {
 }
 
 h1 {
-    padding: 150px 0 0;
+    padding-top: 130px;
 }
 
 .links-container {
@@ -27,6 +27,10 @@ h1 {
     float: right;
     order: 1;
 }
+
+/* .resources-links a{
+    background-color: red;
+} */
 
 .image-container {
     display: flex;

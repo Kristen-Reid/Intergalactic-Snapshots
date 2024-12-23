@@ -3,6 +3,11 @@
     src: url(/fonts/alenia/Alenia.otf);
 }
 
+@font-face {
+    font-family: Poppins Reg;
+    src: url(/fonts/Poppins-Regular.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +19,7 @@
 body {
     display: flex;
     flex-direction: column;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Poppins Reg;
     position: relative;
     color: #f8eeec ;
     width: 100%;
@@ -55,17 +60,29 @@ nav ul li {
     color: #f8eeec;
     font-size: 17px;
     font-weight: bold;
-    padding: 7px 13px;
+    padding: 4px 3px;
     border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+
+nav li a span {
+    color: #f8eeec;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 0 10px;
+    border-radius: 5px;
+    background-color: #000019;
 }
 
 a.active, .nav-links:hover {
-    background-color: #000097;
     transition: .5s;
+    backdrop-filter: blur(8px);
+    background: rgb(0, 68, 255);
+    box-shadow: 0 0 10px rgb(0, 68, 255);
 }
 
 .check-btn {
-    color: #333;
+    color: #f8eeec;
     font-size: 30px;
     float: right;
     margin: 25px 40px;
@@ -73,7 +90,7 @@ a.active, .nav-links:hover {
     cursor: pointer;
 }
 
-#check, #uncheck {
+#check {
     display: none;
 }
 
@@ -86,11 +103,6 @@ h1, h2 {
 h1 {
     text-align: center;
     font-size: 40px;
-}
-
-h2 {
-    font-size: 20px;
-    font-weight: bold;
 }
 
 .landing-container {
@@ -115,7 +127,7 @@ h2 {
     font-size: 48px;
     text-align: center;
     z-index: 4;
-    padding-top: 30px;
+    padding-top: 50px;
 }
 
 .headline-paragraph {
@@ -151,38 +163,76 @@ h2 {
 }
 
 .content-container {
-    position: relative;
     height: auto;
-    display: grid;
     justify-items: center;
     align-content: center;
     width: 100%;
-    background-color: black;
+    height: 100%;
+    background-color: #00020D;
     z-index: 5;
 }
 
 .content-grid {
     margin: 50px;
-    position: relative;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
     gap: 15px;
     width: 75%;
+    height: 100%;
     justify-items: center;
 }
 
 .card {
     text-align: center;
-    border-radius: 50px;
-    padding: 40px 30px;
-    background-color: #000097;
-    height: 350px;
+    border-radius: 50px 50px 50px 0;
+    padding: 20px 30px;
+    background-color: #070C73;
+    height: 100%;
     width: 300px;
+    transition: all .5s ease-in-out;
+}
+
+.card:hover {
+    border-radius: 50px;
 }
 
 a .card {
     color: #f8eeec;
+}
+
+.card-icon {
+    width: 150px;
+    height: 150px;
+    padding: 10px 0;
+}
+
+.card-icon-two {
+    width: 150px;
+    height: 150px;
+    padding: 0;
+    margin: 0;
+}
+
+.card-icon-three {
+    width: 120px;
+    height: 130px;
+    padding: 8px 0 15px;
+    margin: 0;
+}
+
+.card-h2 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+
+.landing-section {
+    height: 100%;
 }
 
 
@@ -199,15 +249,19 @@ footer {
     font-weight: bold;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1063px) {
     .nav-links {
         font-size: 14px;
     }
 
     .logo {
-        font-size: 30px;
-        margin: 0 50px;
+        font-size: 28px;
+        margin: 0 12px 0 25px;
+    }
 }
+
+@media (max-width: 960px) {
+
 
 }
 
@@ -225,7 +279,7 @@ footer {
         left: -100%;
         transition: all .5s;
         text-align: center;
-        background-color: #333;
+        background-color: #00020D;
     }
 
     @media (max-width: 384px) {
@@ -249,10 +303,6 @@ footer {
         font-weight: bold;
     }
 
-    a.active, .nav-links:hover {
-        background: none;
-        color: blueviolet;
-    }
 
     #check:checked ~ ul {
         left: 0;

@@ -7,23 +7,71 @@ fieldset {
     color: #f8eeec;
 }
 
-@media (max-width: 742px) {
-    .form-container {
-        margin-top: 60px;
-        padding-top: 140px;
+@media (max-width: 870px) {
+    p {
+        margin-left: 20px;
     }
 }
 
-@media (max-width: 616px) {
-    .form-container {
-        margin-top: 60px;
-        padding-top: 50px;
+@media (max-width: 850px) {
+    p {
+        font-size: 15px;
     }
 }
 
-@media (max-width: 610px) {
-    .form-container {
-        margin-top: 60px;
-        padding-top: 30px;
+@media (max-width: 780px) {
+
+    .signup-container {
+        padding-top: 20px;
+    }
+
+    .signup-headline {
+        text-align: center;
+        padding: 0;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 744px) {
+    .signup-container {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 494px) {
+    .signup-headline {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 489px) {
+
+    p {
+        margin-right: 15px;
+    }
+
+    .signup-headline {
+        text-align: center;
+        padding-left: 100px;
+        margin-top: 50px;
+        padding: 0;
+    }
+
+    .signup-h2 {
+        text-align: center;
+        padding: 0;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .signup-container {
+        margin-top: 0px;
+    }
+
+    .headline-container {
+        display: none;
+        padding: 0;
+        margin: 0;
     }
 }
