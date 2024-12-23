@@ -4,5 +4,26 @@ fieldset {
     height: 400px;
     border-color: transparent;
     border-radius: 15px;
-    color: white;
+    color: #f8eeec;
+}
+
+@media (max-width: 742px) {
+    .form-container {
+        margin-top: 60px;
+        padding-top: 140px;
+    }
+}
+
+@media (max-width: 616px) {
+    .form-container {
+        margin-top: 60px;
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 610px) {
+    .form-container {
+        margin-top: 60px;
+        padding-top: 30px;
+    }
 }

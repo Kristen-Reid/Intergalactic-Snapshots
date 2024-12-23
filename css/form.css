@@ -3,7 +3,7 @@ body {
     padding: 0;
 }
 
-.form-container {
+.signup-container {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -37,19 +37,20 @@ fieldset {
 }
 
 .left {
-    margin: -50px 100px;
-    padding: 90px 0 ;
+    margin: -50px 50px;
+    padding: 100px 0 ;
     float: left;
     width: 500px;
     height: 400px;
     color: #f8eeec ;
 }
 
-ul {
+.left ul {
     list-style-position: outside;
+    background-color: hotpink;
 }
 
-.form-list {
+.signup-list {
     display: flex;
     align-content: center;
     padding-top: 5px;
@@ -59,7 +60,7 @@ ul {
     font-weight:lighter;
 }
 
-.form-list::before {
+.signup-list::before {
     content: '';
     display: inline;
     background-image: url(/images/astronomy_camera_education_observatory_stars_icon.png);
@@ -70,22 +71,22 @@ ul {
     padding-right: 15px;
 }
 
-.form-bullets {
+.signup-bullets {
     width: 200px;
 }
 
-.form-headline {
+.signup-headline {
     font-size: 38px;
     text-align: left;
     margin-bottom: 10px;
 }
 
-h2 {
+.form-h2 {
     font-size: 30px;
     margin: 30px 40px;
 }
 
-.form-h2 {
+h2 {
     padding-bottom: 10px;
     font-size: 22px;
     margin: 0;
@@ -147,16 +148,25 @@ form button {
     .right {
         padding: 0;
     }
-
-    img {
-        width: 300px;
-        height: 300px;
-    }
 }
 
-@media (max-width: 895px) {
-    img {
-        margin-right: 0;
+
+@media (max-width: 815px) {
+    .signup-headline {
+        font-size: 30px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    .form-h2 {
+        font-size: 24px;
+        margin: 30px 40px;
+    }
+
+    h2 {
+        padding-bottom: 10px;
+        font-size: 22px;
+        margin: 0;
     }
 }
 
@@ -166,22 +176,62 @@ form button {
         height: 400px;
     }
 
-
-    img {
-        width: 300px;
-        height: 300px;
-        background-size: cover;
-    }
-
     .information input {
         width: 170px;
     }
+
+    p {
+        margin-right: 15px;
+    }
 }
 
-@media (max-width: 735px) {
+@media (max-width: 780px) {
 
-    .form-container {
-        margin-top: 60px;
+
+
+    .signup-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-top: 140px;
+    }
+
+    .form-headline {
+        font-size: 28px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    .signup-headline {
+        /* background-color: hotpink; */
+        margin-top: 100px;
+    }
+
+    .signup-headline, .signup-h2 {
+        text-align: center;
+    }
+
+    h2 {
+        margin: 30px 10px;
+        padding-bottom: 10px;
+        font-size: 18px;
+        margin: 0;
+    }
+
+    p {
+        margin-right: 25px;
+    }
+}
+
+@media (max-width: 744px) {
+
+    .signup-container {
+        margin-top: 25px;
+        padding-top: 190px;
+    }
+
+    .signup-headline {
+        /* background-color: hotpink; */
+        margin-top: 50px;
     }
 
     fieldset {
@@ -195,9 +245,6 @@ form button {
         justify-content: center;
     }
 
-  img {
-        display: none;
-    }
 
   form button {
         width: 100px;
@@ -208,10 +255,33 @@ form button {
 
 }
 
+@media (max-width: 493px) {
+    .signup-headline {
+        width: 400px;
+        font-size: 24px;
+        margin-left: 50px;
+    }
+
+    h2 {
+        width: 300px;
+        margin-left: 100px;
+    }
+}
+
 @media (max-width: 400px) {
+
     fieldset {
         width: 227px;
    }
+
+   .headline-container {
+    display: none;
+   }
+
+   p {
+    margin-right: 10px;
+   }
+
 
 
 }

@@ -37,7 +37,7 @@ p {
     width: 350px;
     margin-top: 50px;
     text-align: center;
-    color: white;
+    color: #f8eeec;
 }
 
 img {
@@ -46,23 +46,6 @@ img {
     height: 100%;
 }
 
-@media (max-width: 1456px) {
-    body {
-        height: 130vh;
-    }
-
-    /* h1 {
-     padding: 350px 0 0;
-
-    } */
-}
-
-
-@media (max-width: 970px) {
-    body {
-        height: 230vh;
-    }
-}
 
 @media (max-width: 590px) {
 
