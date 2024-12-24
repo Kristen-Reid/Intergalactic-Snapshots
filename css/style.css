@@ -20,6 +20,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: Poppins Reg;
+    letter-spacing: 1px;
     position: relative;
     color: #f8eeec ;
     width: 100%;
