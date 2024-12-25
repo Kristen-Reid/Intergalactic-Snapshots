@@ -9,6 +9,7 @@ body {
     display: flex;
     justify-content: center;
     padding-top: 200px;
+    margin-bottom: 200px;
 }
 
 fieldset p a {
@@ -41,7 +42,6 @@ fieldset {
     padding: 100px 0 70px;
     float: left;
     width: 500px;
-    /* height: 400px; */
     color: #f8eeec;
 }
 
@@ -56,7 +56,7 @@ fieldset {
     text-indent: 0;
     padding-left: 0;
     font-size: 16px;
-    font-weight: lighter;
+    font-weight: normal;
 }
 
 .signup-list::before {

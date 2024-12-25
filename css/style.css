@@ -20,6 +20,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: Poppins Reg;
+    font-weight: bold;
     letter-spacing: 1px;
     position: relative;
     color: #f8eeec ;
@@ -43,7 +44,7 @@ nav {
     color: #f8eeec ;
     font-size: 30px;
     line-height: 80px;
-    margin: 0 100px;
+    margin-left: 5px;
     cursor: pointer;
 }
 
@@ -66,13 +67,17 @@ nav ul li {
     transition: all .5s ease-in-out;
 }
 
-nav li a span {
+.links {
+    display: inline;
+    width: 63px;
+    height: 23px;
     color: #f8eeec;
     font-size: 17px;
     font-weight: bold;
-    padding: 0 10px;
+    padding: 0 5px;
     border-radius: 5px;
     background-color: #000019;
+    /* background-color: white; */
 }
 
 a.active, .nav-links:hover {
@@ -82,7 +87,9 @@ a.active, .nav-links:hover {
     box-shadow: 0 0 10px rgb(0, 68, 255);
 }
 
-.check-btn {
+.check-btn img {
+    /* background-color: white; */
+    width: 30px;
     color: #f8eeec;
     font-size: 30px;
     float: right;
@@ -228,6 +235,10 @@ a .card {
     font-weight: bold;
 }
 
+.card-h2:hover {
+    text-decoration: underline;
+}
+
 .card p {
     margin-bottom: 10px;
 }
@@ -261,14 +272,16 @@ footer {
     }
 }
 
-@media (max-width: 960px) {
-
-
+@media (max-width: 874px) {
+    .logo {
+        font-size: 26px;
+    }
 }
+
 
 @media (max-width: 864px) {
 
-    .check {
+    .check img {
         display: block;
     }
 
@@ -283,18 +296,6 @@ footer {
         background-color: #00020D;
     }
 
-    @media (max-width: 384px) {
-        .logo {
-            font-size: 25px;
-        }
-    }
-
-    @media (max-width: 372px) {
-        .logo {
-            font-size: 18px;
-        }
-    }
-
     nav ul li {
         display: block;
     }
@@ -304,9 +305,54 @@ footer {
         font-weight: bold;
     }
 
-
     #check:checked ~ ul {
         left: 0;
     }
 
+}
+
+@media (max-width: 600px) {
+    .image-box {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 400px;
+        height: 350px;
+        z-index: 3;
+}
+
+    .first {
+        position: relative;
+        z-index: 2;
+        top: 130px;
+        opacity: .9;
+        width: 100%;
+    }
+
+    .second {
+        z-index: 1;
+        position: relative;
+        top: -100px;
+        right: 50px;
+        width: 500px;
+        opacity: .5;
+    }
+}
+
+@media (max-width: 510px) {
+    .logo {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 444px) {
+    .logo {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 360px) {
+    .logo {
+        font-size: 14px;
+    }
 }
