@@ -256,7 +256,7 @@ footer{
     margin-top: auto;
     position: relative;
     z-index: 100;
-    background-color: rgba(182, 189, 251, 0.2);
+    background-color: inherit;
     height: 100px;
     width: 100%;
     color: #f8eeec;
@@ -274,7 +274,6 @@ footer{
 }
 
 .footer-name {
-    color: #f8eeec;
     width: 140px;
     margin-left: 5px;
     transition: all .8s .5s ease-in-out;
@@ -296,7 +295,7 @@ footer{
 
 
 .footer-cp {
-    font-size: 14px;
+    font-size: 10px;
 }
 
 .footer-icons {
