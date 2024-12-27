@@ -9,7 +9,7 @@ Intergalactic Snapshots is a photography website focused on astrophotography, fe
    - [Technologies Used](#tech)
    - [How to use our application](#howto)
 
-<h2>Features</h2>
+<h2>Features</h2> <a name="features"></a>
 
 - Home Page
     * The homepage includes an introduction to the site, featuring navigation links, a logo, and a responsive design suitable for different screen sizes.
@@ -35,12 +35,12 @@ Intergalactic Snapshots is a photography website focused on astrophotography, fe
 
       * Link: /login.html
 
-<h2>Technologies Used</h2>
+<h2>Technologies Used</h2> <a name="tech"></a>
 
 [![My Skills](https://skillicons.dev/icons?i=html,css)](https://skillicons.dev)
 
 
-<h2>Getting started</h2>
+<h2>Getting started</h2> <a name="howto"></a>
 1. Clone this repository to your local machine.
   
   ```bash
