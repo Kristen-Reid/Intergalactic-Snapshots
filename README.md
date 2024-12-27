@@ -48,10 +48,3 @@ Intergalactic Snapshots is a photography website focused on astrophotography, fe
    ```
 
 2. Open the index.html file in your browser to see the website in action.
-
-
-<h2>Future Enhancements</h2>
-
-- Implement a backend for user authentication (Pyhton or Node.js).
-- Add dynamic content to the gallery page using a CMS or image API.
-- Enhance interactivity with JavaScript (e.g., lightboxes, image sliders).
