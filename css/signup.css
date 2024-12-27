@@ -114,7 +114,7 @@ p {
     opacity: .5;
     display: flex;
     flex-direction: column;
-    padding: 10px 30px 10px 10px;
+    padding: 10px 50px 10px 10px;
     margin: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -278,29 +278,6 @@ button:active {
 
 @media (max-width: 780px) {
 
-    .signup-container {
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        padding-top: 90px;
-    }
-
-    .signup-headline {
-        align-content: center;
-        margin-top: 150px;
-        text-align: center;
-    }
-
-    .signup-h2 {
-        text-align: center;
-        padding-left: 15px;
-    }
-
-    .right {
-        margin-right: 100px;
-        margin-bottom: 80px;
-    }
-
     form {
         width: 384px;
     }
@@ -309,8 +286,27 @@ button:active {
         width: 384px;
         height: 100%;
     }
+    .signup-container {
+        margin-top: -20px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .signup-headline {
+        align-content: center;
+        margin-top: 160px;
+        text-align: center;
+    }
 
+    .signup-h2 {
+        text-align: center;
+    }
+
+    .right {
+        margin-right: 100px;
+        margin-bottom: 80px;
+    }
 
     h2 {
         margin: 30px 10px;
@@ -323,21 +319,16 @@ button:active {
         margin-right: 25px;
     }
 
-    .signup-headline {
-        font-size: 28px;
-        margin-bottom: 10px;
-    }
 }
 
 @media (max-width: 744px) {
 
     .signup-container {
-        margin-top: 25px;
-        padding-top: 90px;
+        margin-top: 6px;
     }
 
     .signup-headline {
-        margin-top: 100px;
+        margin-top: 105px;
     }
 
 
@@ -355,7 +346,7 @@ button:active {
 @media (max-width: 503px) {
 
     .signup-container {
-        padding-top: 80px;
+        margin-top: -5px;
     }
 
     .signup-headline {
@@ -372,7 +363,6 @@ button:active {
 
     fieldset {
         width: 300px;
-        background-color: #0020c2;
     }
 
 }
@@ -382,7 +372,7 @@ button:active {
     .signup-container {
         justify-content: center;
         align-items: center;
-        padding-top: 90px;
+        margin-top: 5px;
     }
 
     .headline-container {
@@ -407,6 +397,12 @@ button:active {
         width: 300px;
     }
 
+}
+
+@media (max-width: 475px) {
+    .signup-container {
+        margin-top: -85px;
+    }
 }
 
 @media (max-width: 400px) {
