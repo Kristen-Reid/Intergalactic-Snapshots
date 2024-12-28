@@ -12,11 +12,11 @@ Intergalactic Snapshots is a photography website focused on astrophotography, fe
 <h2>Features</h2> <a name="features"></a>
 
 - Home Page
-    * The homepage includes an introduction to the site, featuring navigation links, a logo, and a responsive design suitable for different screen sizes.
+    * The homepage introduces the site and features navigation links, a logo, and a responsive design suitable for different screen sizes.
         * Link: /index.html
 
 - Gallery Page
-    * A page dedicated to showcasing stunning astrophotography images. (Content not provided but assumed to be part of the gallery's visual showcase.)
+    * A page dedicated to showcasing stunning astrophotography images. 
 
         * Link: /gallery.html
 
@@ -31,7 +31,7 @@ Intergalactic Snapshots is a photography website focused on astrophotography, fe
       * Link: /signup.html
 
 - Login Page
-    * A login form for returning users to access their personal space on the website. Includes options for users to reset their credentials if needed.
+    * A login form for returning users to access their personal space on the website. 
 
       * Link: /login.html
 
