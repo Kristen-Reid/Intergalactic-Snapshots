@@ -1,6 +1,6 @@
-<h1 align="center"> Intergalactic Snapshots</h1> <a href="https://fancy-parfait-475716.netlify.app/"></a>
+<h1 align="center"> Intergalactic Snapshots</h1> 
 
-<h5 align="center">By: <a href="https://github.com/Kristen-Reid">Kristen Reid</a> </h5>
+<h5 align="center">By: <a href="https://github.com/Kristen-Reid">Kristen Reid</a> - <a href="https://fancy-parfait-475716.netlify.app/"><i>Live Site</i></a></h5>
 
 <h2>About</h2>
 Intergalactic Snapshots is a photography website focused on astrophotography, featuring resources, sign-up/login functionalities, and a gallery for showcasing stunning space photography. This website provides users with educational materials to enhance their astrophotography skills, offers a platform to join a creative community, and allows users to log in and sign up for updates.
