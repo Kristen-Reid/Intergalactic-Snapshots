@@ -1,4 +1,4 @@
-<a href="https://fancy-parfait-475716.netlify.app/"><h1 align="center"> Intergalactic Snapshots</h1></a>
+<h1 align="center"> Intergalactic Snapshots</h1> <a href="https://fancy-parfait-475716.netlify.app/"></a>
 
 <h5 align="center">By: <a href="https://github.com/Kristen-Reid">Kristen Reid</a> </h5>
 
